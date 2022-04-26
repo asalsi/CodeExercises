@@ -7,10 +7,6 @@
 #         sys.stdout.write("\n")
 #     sys.stdout.write("\n")
 
-### a change
-
-### another change
-
 # call recursive function, join result to single list
 def spiralTraverse(mat):
     lst = spiral_recurse(mat, [])
@@ -20,9 +16,8 @@ def spiralTraverse(mat):
 # unwind 2D matrix into return string, with CW as L-R
 def spiral_recurse(mat, lst):
     
-    # base case (avoid actually appending middle 4 or one to list for now)
+    # base case
     if (len(mat) is 0): 
-        # return ''.join(str(lst))
         return lst
 
     elif (len(mat) is 1):
